@@ -31,7 +31,7 @@ class SleepNightAdapter(val clickListener: SleepNightListener) : ListAdapter<Sle
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(getItem(position)!!, clickListener)
+        holder.bind(getItem(position), clickListener)
     }
 
     class ViewHolder private constructor(val binding: ListItemSleepNightBinding) : RecyclerView.ViewHolder(binding.root) {
